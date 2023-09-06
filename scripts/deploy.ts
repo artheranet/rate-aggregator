@@ -17,6 +17,7 @@ async function main() {
 
   console.log('Basic ERC-20 token contract deployed:', msg(await basic.getAddress()));
 }
+
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
