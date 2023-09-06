@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@nomiclabs/hardhat-ethers':
     specifier: npm:hardhat-deploy-ethers@^0.4.1
@@ -4973,3 +4969,7 @@ packages:
     dependencies:
       ethers: 5.7.2
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
