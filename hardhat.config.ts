@@ -6,13 +6,13 @@ import "./tasks/mint"
 dotenv.config();
 
 const {
-  ARTHERA_TESTNET__RPC_ENDPOINT_URL,
+  ARTHERA_TESTNET_RPC_ENDPOINT_URL,
   ARTHERA_TESTNET_PRIVATE_KEY  
 } = process.env;
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.21",
+    version: "0.8.19",
     settings: {
       optimizer: {
         enabled: true,
@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
       allowUnlimitedContractSize: true
     },
     'arthera-testnet': {
-      url: ARTHERA_TESTNET__RPC_ENDPOINT_URL,
+      url: ARTHERA_TESTNET_RPC_ENDPOINT_URL,
       accounts: ARTHERA_TESTNET_PRIVATE_KEY !== undefined ? [ARTHERA_TESTNET_PRIVATE_KEY] : [],
     }
   }, 
