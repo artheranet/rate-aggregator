@@ -6,9 +6,8 @@ import "./tasks/mint"
 dotenv.config();
 
 const {
-  GOERLI_RPC_ENDPOINT_URL,
-  GOERLI_PRIVATE_KEY,
-  ETHERSCAN_API_KEY
+  ARTHERA_TESTNET__RPC_ENDPOINT_URL,
+  ARTHERA_TESTNET_PRIVATE_KEY  
 } = process.env;
 
 const config: HardhatUserConfig = {
@@ -26,16 +25,11 @@ const config: HardhatUserConfig = {
       chainId: 1337,
       allowUnlimitedContractSize: true
     },
-    'goerli': {
-      url: GOERLI_RPC_ENDPOINT_URL as string,
-      accounts: GOERLI_PRIVATE_KEY !== undefined ? [GOERLI_PRIVATE_KEY] : [],
+    'arthera-testnet': {
+      url: ARTHERA_TESTNET__RPC_ENDPOINT_URL,
+      accounts: ARTHERA_TESTNET_PRIVATE_KEY !== undefined ? [ARTHERA_TESTNET_PRIVATE_KEY] : [],
     }
   }, 
-  etherscan: {
-    apiKey: {
-      goerli: ETHERSCAN_API_KEY || ""
-    },
-  },
 };
 
 export default config;
