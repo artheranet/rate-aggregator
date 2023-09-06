@@ -1,12 +1,12 @@
 {
-  "name": "w3hc-hardhat-template",
+  "name": "rate-aggregator",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "hardhat test",
-    "basic": "hardhat run scripts/deploy.ts --network goerli",
-    "mint": "hardhat mint --network goerli"
+    "basic": "hardhat run scripts/deploy.ts --network arthera-testnet",
+    "mint": "hardhat mint --network arthera-testnet"
   },
   "keywords": [],
   "author": "",
