@@ -25,7 +25,6 @@ async function main() {
 
   console.log('Rate Aggregator contract deployed:', msg(await rateAggregator.getAddress()));
 }
-
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
