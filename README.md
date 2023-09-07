@@ -17,7 +17,6 @@ cp .env.example .env
 ```
 
 You can add your own private key in the `.env` file. Arthera Testnet faucet is [here](https://faucet.arthera.net/). 
-You can add your own private key in the `.env` file. Arthera Testnet faucet is [here](https://faucet.arthera.net/). 
 
 ## Test 
 
