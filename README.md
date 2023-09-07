@@ -42,7 +42,6 @@ pnpm getRate 1
 - Hardhat [v2.17.2](https://github.com/NomicFoundation/hardhat/releases/tag/hardhat%402.17.2)
 - OpenZeppelin Contracts [v4.9.3](https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.9.3)
 - Ethers [v6.7.1](https://docs.ethers.org/v6/)
-- Ethers [v6.7.1](https://docs.ethers.org/v6/)
 
 ## Support
 
