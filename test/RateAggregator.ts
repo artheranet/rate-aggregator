@@ -32,9 +32,9 @@ describe("Rate Aggregator", function () {
 
   describe("Interactions", function () {
     it("Should get the current AA/USD rate", async function () {
-      const { rateAggregator, bob, dexConfig1, dexConfig2, decimals } = await loadFixture(deployContracts);
+      const { rateAggregator, bob, placeholderRate1, placeholderRate2, decimals } = await loadFixture(deployContracts);
       await rateAggregator.connect(bob).updateRate()
-      expect(Number(await rateAggregator.connect(bob).updateRate())).to.be.equal((dexConfig1+dexConfig2) / 2 * 10 ** decimals)
+      expect(Number(await rateAggregator.connect(bob).updateRate())).to.be.equal((placeholderRate1+placeholderRate2) / 2 * 10 ** decimals)
     });
   });
 });
