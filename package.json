@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "hardhat test",
-    "basic": "hardhat run scripts/deploy.ts --network arthera-testnet",
-    "mint": "hardhat --network arthera-testnet mint --amount"
+    "deploy": "hardhat run scripts/deploy.ts --network arthera-testnet",
+    "getRate": "hardhat --network arthera-testnet getRate --usd"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arthera Team",
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
