@@ -1,5 +1,9 @@
 # Rate Aggregator
 
+Always returns the AA/USD rate. 
+
+The main available AA/USD exchange rate is an average between the rates indicated by different DEXs.
+
 ## Install
 
 ```
@@ -23,13 +27,13 @@ pnpm test
 ## Deploy 
 
 ```
-pnpm basic
+pnpm deploy
 ```
 
 ## Use
 
 ```
-pnpm mint 42
+pnpm getRate 1
 ```
 
 ## Versions
