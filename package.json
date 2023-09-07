@@ -6,7 +6,7 @@
   "scripts": {
     "test": "hardhat test",
     "basic": "hardhat run scripts/deploy.ts --network arthera-testnet",
-    "mint": "hardhat mint --network arthera-testnet"
+    "mint": "hardhat --network arthera-testnet mint --amount"
   },
   "keywords": [],
   "author": "",
